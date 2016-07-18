@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMDb</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css">
+          [class*="col"] { margin-bottom: 20px; }
+          img { width: 100%; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <fieldset>
+                <legend>Movies & TV Shows</legend>
+                <div class="row">
+                    <div class="panel-group col-xs-11">
+                        <div class="panel panel-default">
+                            <div class="panel panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="clickable accordion-toggle" data-toggle="collapse" href="#movies">Movies</a>
+                                </h4>
+                            </div>
+                            <div id="movies" class="panel-collapse collapse">
+                                <div class="table table-hover" id="movies_list"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>
+                        <i class="col-xs-1" id="movies_icon"></i>
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="panel-group col-xs-11">
+                        <div class="panel panel-default">
+                            <div class="panel panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="clickable accordion-toggle" data-toggle="collapse" href="#series">Series</a>
+                                </h4>
+                            </div>
+                            <div id="series" class="panel-collapse collapse"></div>
+                        </div>
+                    </div>
+                    <h4>
+                        <i class="col-xs-1" id="series_icon"></i>
+                    </h4>
+                </div>
+            </fieldset>
+        </div>
+        
+        <script src='assets/bootstrap/js/jquery.js'></script>
+        <script src="assets/bootstrap/js/bootstrap.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
